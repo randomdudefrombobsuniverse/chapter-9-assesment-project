@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Shop</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/macbook.jpg') }}" alt="macbook">
+                <h1>
+                    <p>
+                        Macbook M1  <br>
+                        $2000
+                        </br>
+                    </p>
+                </h1>
+                <button>Purchase</button>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/phone.jpg') }}" alt="phone">
+                <h1>
+                    <p>
+                        Iphone 15 Pro Max  <br>
+                        $1500
+                        </br>
+                    </p>
+                </h1>
+                <button>Purchase</button>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/watch.jpg') }}" alt="watch">
+                <h1>
+                    <p>
+                        Apple Watch Ultra 2  <br>
+                        $249
+                        </br>
+                    </p>
+                </h1>
+                <button>Purchase</button>
+            </div>
+        </div>
+{% endblock %}
